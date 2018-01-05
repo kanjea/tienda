@@ -1,0 +1,92 @@
+<nav class="white z-depth-0" role="navigation">
+  <div class="nav-wrapper ">
+    <header class=" center unselectable brand-logo center p-navtext">
+      Hola Fidelia
+    </header>
+    <ul class="right">
+      <li>
+        <a id="notifications_bell" href="#">
+          <i class=" material-icons right">notifications_none</i>
+        </a>
+      </li>
+    </ul>
+
+    <ul id="nav-mobile" class="sidenav sidenav-fixed">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="assets/img/background.jpg">
+          </div>
+          <div class="row no-bottom-space">
+            <a class="col s4" href="#!user">
+              <img class="circle" src="assets/img/yuna.jpg">
+            </a>
+            <p class="col s8 white-text left-align">
+              <span class="big-text">1800</span> Puntos</p>
+          </div>
+          <a href="#!name">
+            <span class="white-text name">Fidelia Suarez</span>
+          </a>
+          <a href="#!email">
+            <span class="white-text email">fidelia@gmail.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="material-icons">face</i>Tu perfil</a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="material-icons">history</i>Historial</a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="material-icons">notifications</i>Notificaciones</a>
+      </li>
+      <div class="divider"></div>
+      <li>
+        <a href="#inicio" (click)="selectTab('inicio')">
+          <i class="material-icons">home</i>Inicio</a>
+      </li>
+      <li>
+        <a href="#puntos" (click)="selectTab('puntos')">
+          <i class="material-icons">local_atm</i>Tus Puntos</a>
+      </li>
+      <li>
+        <a href="#!" (click)="selectTab('negocios')">
+          <i class="material-icons">store</i>Negocios Aliados</a>
+      </li>
+      <div class="divider"></div>
+      <li>
+        <a href="#!">
+          <i class="material-icons">info</i>Acerca de Buckup</a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="material-icons">help</i>Ayuda</a>
+      </li>
+    </ul>
+    <a href="#" data-target="nav-mobile" class="p-navtext sidenav-trigger">
+      <i class="material-icons">menu</i>
+    </a>
+  </div>
+</nav>
+
+
+<!-- tabs -->
+<div id="p-tabs" class="row">
+  <div id="nopadding" class="col s12">
+    <ul id="p-tabsmain" class="tabs">
+      <li class="tab col s4">
+        <a class="active" href="#inicio">Inicio</a>
+      </li>
+      <li class="tab col s4">
+        <a href="#puntos">Puntos</a>
+      </li>
+      <li class="tab col s4">
+        <a href="#negocios">Negocios</a>
+      </li>
+    </ul>
+  </div>
+</div>

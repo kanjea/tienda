@@ -50,11 +50,9 @@
 }
 
 /*Removes margin*/
-#nopadding{
- color:blue;
- background-color: red;
- padding-left: 0;
- padding-right: 0;
+.nopadding{
+ padding-left: 0 !important;
+ padding-right: 0 !important;
 }
 
 /*Removes line below indicator*/
@@ -81,4 +79,44 @@ padding: 0 3% ;
 
 #p-tabscategory, #p-tabscategory a{
     height: 100px;
+}
+
+
+
+/* Generates shadow for the image, to work with text */
+.p-imageshadow {
+    position: relative;
+    text-align: center;
+}
+.p-imageshadow::after {
+
+    
+    box-shadow: inset 0px -20vh 20vh -10vh rgba(50, 50, 50, 0.7);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.p-imageshadow img {
+    max-width: 100%;
+    width: auto;
+}
+
+/* Allows using a span as tooltip text for fa buttons */
+.fixed-action-btn ul > li > span {
+
+    position: absolute;
+    right: 100%;
+    white-space: nowrap;
+    border-radius: 5px;
+    background: rgba(255,255,255,.9);
+    padding: 3px 9px;
+    color: #444;
+    margin-top: 4px;
+    
 }

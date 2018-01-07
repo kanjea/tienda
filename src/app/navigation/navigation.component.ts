@@ -18,8 +18,12 @@ export class NavigationComponent implements OnInit {
   ngOnInit() {
     const instanceSidenav = new M.Sidenav(document.querySelector('.sidenav'));
     this.instanceTab = new M.Tabs(document.querySelector('#p-tabsmain'));
+    const instanceButton = new M.FloatingActionButton(document.querySelector('.fixed-action-btn'), {
+      hoverEnabled: false
+    });
   }
 
+  /* Lets the sidenav links work */
   selectTab(tab: string) {
     this.instanceTab.select(tab);
   }

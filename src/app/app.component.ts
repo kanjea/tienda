@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,  } from '@angular/core';
 import 'materialize-css';
 declare var M: any;
 
@@ -7,7 +7,7 @@ declare var M: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
   title = 'app';
 
 }

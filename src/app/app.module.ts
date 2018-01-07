@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { StoreCardComponent } from './store-card/store-card.component';
+import { StoresComponent } from './stores/stores.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { StoreCardComponent } from './store-card/store-card.component';
     AppComponent,
     NavigationComponent,
     HomeComponent,
-    StoreCardComponent
+    StoreCardComponent,
+    StoresComponent,
   ],
   imports: [
     BrowserModule

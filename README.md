@@ -34,3 +34,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # TODO
 * Centrar el "hola fidelia"
+* Arreglar texto en tarjetas de categorías
+* Cambiar color de fondo
+* Definir nombre

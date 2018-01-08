@@ -1,24 +1,34 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AppRoutingModule } from './app-routing.module';
 
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { HomeComponent } from './home/home.component';
-import { StoreCardComponent } from './store-card/store-card.component';
-import { StoresComponent } from './stores/stores.component';
 
+import { environment } from '../environments/environment';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { MainComponent } from './main/main.component';
+import { HomeComponent } from './main/home/home.component';
+import { StoresComponent } from './main/stores/stores.component';
+import { StoreCardComponent } from './main/stores/store-card/store-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainComponent,
     HomeComponent,
-    StoreCardComponent,
     StoresComponent,
+    StoreCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : [],
+    /* ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }) */
   ],
   providers: [],
   bootstrap: [AppComponent]

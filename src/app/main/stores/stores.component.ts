@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Store } from '../models/store';
-import { STORES } from '../mock-stores';
+import { Store } from '../../models/store';
+import { STORES } from '../../models/mock-stores';
 import 'materialize-css';
 declare var M: any;
 
@@ -10,7 +10,6 @@ declare var M: any;
   styleUrls: ['./stores.component.css']
 })
 export class StoresComponent implements OnInit {
-
   constructor() { }
   stores = STORES;
   instanceTab;

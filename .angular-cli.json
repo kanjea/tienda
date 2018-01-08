@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "buckupangular"
+    "name": "buckupco"
   },
   "apps": [
     {
@@ -9,10 +9,8 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "install.js",
-        "sw.js",
-        "manifest.json",
-        "favicon.ico"    
+        "favicon.ico",
+        "manifest.json"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -22,18 +20,18 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
-        "../node_modules/materialize-css/dist/css/materialize.css"
+        "../node_modules/materialize-css/dist/css/materialize.css",
+        "styles.css"
       ],
       "scripts": [
-        "../node_modules/materialize-css/dist/js/materialize.js",
-        "assets/js/init.js"
+        "../node_modules/materialize-css/dist/js/materialize.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
-      }
+      },
+      "serviceWorker": true
     }
   ],
   "e2e": {

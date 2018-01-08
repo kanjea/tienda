@@ -1,0 +1,97 @@
+<div id="negocios" class="p-widecontainer">
+  <!--CARD PUNTOS-->
+  <div class="card-panel ">
+    <span class="title-card">Tienes</span>
+    <div class="big-text center-align">18000
+      <span class="little-text">Puntos</span>
+    </div>
+    <div class="center-align">De 74000
+      <i class="tiny material-icons">history</i>
+    </div>
+  </div>
+
+  <!-- CARD NEGOCIOS CERCA-->
+  <div class="card-panel ">
+    <span class="title-card">Negocios cerca</span>
+
+    <!-- Tabs -->
+
+    <ul id="p-tabscategory" class="tabs tabs-fixed-width row">
+
+      <li class="tab col s3">
+        <a href="#entretenimiento">
+          <i class="material-icons right medium">movie_filter</i>
+        </a>
+      </li>
+      <li class="tab col s3">
+        <a href="#comida">
+          <i class="material-icons active right medium">restaurant</i>
+        </a>
+      </li>
+      <li class="tab col s3">
+        <a href="#compras">
+          <i class="material-icons right medium">local_grocery_store</i>
+        </a>
+      </li>
+      <li class="tab col s3">
+        <a href="#mascotas">
+          <i class="material-icons right medium">pets</i>
+        </a>
+      </li>
+    </ul>
+
+
+    <div class="row">
+      <div id="comida">
+        <div *ngFor="let store of stores">
+          <div *ngIf="store.category=='food'">
+            <app-store-card [store]="store"></app-store-card>
+          </div>
+        </div>
+      </div>
+      <div id="entretenimiento">
+          <div *ngFor="let store of stores">
+              <div *ngIf="store.category=='entertainment'">
+                <app-store-card [store]="store"></app-store-card>
+              </div>
+            </div>
+      </div>
+      <div id="mascotas">
+          <div *ngFor="let store of stores">
+              <div *ngIf="store.category=='pets'">
+                <app-store-card [store]="store"></app-store-card>
+              </div>
+            </div>
+      </div>
+      <div id="compras">
+          <div *ngFor="let store of stores">
+              <div *ngIf="store.category=='shopping'">
+                <app-store-card [store]="store"></app-store-card>
+              </div>
+            </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- <div *ngFor="let store of stores" class="row">
+      <div *ngIf="store.category=='food'" id="comida">
+        <app-store-card [store]="store"></app-store-card>
+      </div>
+      <div *ngIf="store.category=='entertainment'" id="entretenimiento">
+        <app-store-card [store]="store"></app-store-card>
+      </div>
+      <div *ngIf="store.category=='pets'" id="mascotas">
+        <app-store-card [store]="store"></app-store-card>
+      </div>
+      <div *ngIf="store.category=='shopping'" id="compras">
+        <app-store-card [store]="store"></app-store-card>
+      </div>
+    </div> -->
+
+  </div>
+
+
+
+</div>

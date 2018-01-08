@@ -1,4 +1,5 @@
 /*Makes text unselectable*/
+
 .unselectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -8,89 +9,108 @@
     user-select: none;
 }
 
+
 /*Semantically friendly big text*/
+
 .big-text {
     font-size: 2.5rem;
 }
-.little-text{
+
+.little-text {
     font-size: 60%;
 }
+
+
 /*moves content for work with the fixed sidenav on large screens*/
- #body-content, header, main, #p-tabs, footer {
+
+#body-content,
+header,
+main,
+#p-tabs,
+footer {
     padding-left: 300px;
 }
-#header-app{
- margin-left: 300px !important;
+
+#header-app {
+    margin-left: 300px !important;
 }
+
 @media only screen and (max-width: 992px) {
-   #body-content,
+    #body-content,
     header,
-    main, #p-tabs,
+    main,
+    #p-tabs,
     footer {
         padding-left: 0;
     }
-    
-    #header-app{
+    #header-app {
         margin-left: 0px !important;
     }
 }
 
 
 /*Removes bottom space, initially for the sidenav photo panel*/
-.no-bottom-space{
+
+.no-bottom-space {
     margin-bottom: 0;
 }
 
+
 /*makes the title card smaller and a little out of the layout of the card*/
-.title-card{
+
+.title-card {
     margin-left: -1rem;
     margin-top: -1rem;
     font-size: small;
     display: block;
 }
 
+
 /*Removes margin*/
-.nopadding{
- padding-left: 0 !important;
- padding-right: 0 !important;
+
+.nopadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
+
 /*Removes line below indicator*/
-#p-tabscategory .indicator{
+
+#p-tabscategory .indicator {
     height: 0;
 }
 
-
 .tabs .tab a {
-  color: rgba(238, 110, 115, 0.3);
-    
+    color: rgba(238, 110, 115, 0.3);
 }
 
-.tabs-content.carousel .carousel-item { height: 100%; }
+.tabs-content.carousel .carousel-item {
+    height: 100%;
+}
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+    color: #444;
 }
 
-.p-widecontainer{
-padding: 0 3% ;
+.p-widecontainer {
+    padding: 0 3%;
 }
 
-#p-tabscategory, #p-tabscategory a{
+#p-tabscategory,
+#p-tabscategory a {
     height: 100px;
 }
 
 
-
 /* Generates shadow for the image, to work with text */
+
 .p-imageshadow {
     position: relative;
     text-align: center;
 }
-.p-imageshadow::after {
 
-    
+.p-imageshadow::after {
     box-shadow: inset 0px -20vh 20vh -10vh rgba(50, 50, 50, 0.7);
     bottom: 0;
     content: "";
@@ -102,21 +122,22 @@ padding: 0 3% ;
     top: 0;
     width: 100%;
 }
+
 .p-imageshadow img {
     max-width: 100%;
     width: auto;
 }
 
-/* Allows using a span as tooltip text for fa buttons */
-.fixed-action-btn ul > li > span {
 
+/* Allows using a span as tooltip text for fa buttons */
+
+.fixed-action-btn ul>li>span {
     position: absolute;
     right: 100%;
     white-space: nowrap;
     border-radius: 5px;
-    background: rgba(255,255,255,.9);
+    background: rgba(255, 255, 255, .9);
     padding: 3px 9px;
     color: #444;
     margin-top: 4px;
-    
 }

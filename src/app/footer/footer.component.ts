@@ -3,20 +3,20 @@ import 'materialize-css';
 
 declare var M: any;
 
-
 @Component({
-  selector: 'app-navigation',
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.css']
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.css']
 })
-export class NavigationComponent implements OnInit {
+export class FooterComponent implements OnInit {
 
   instanceTab;
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
-    const instanceSidenav = new M.Sidenav(document.querySelector('.sidenav'));
     this.instanceTab = new M.Tabs(document.querySelector('#p-tabsmain'));
     const instanceButton = new M.FloatingActionButton(document.querySelector('.fixed-action-btn'), {
       hoverEnabled: false
@@ -27,6 +27,5 @@ export class NavigationComponent implements OnInit {
   selectTab(tab: string) {
     this.instanceTab.select(tab);
   }
-
 
 }

@@ -23,9 +23,6 @@ export class FooterComponent implements OnInit {
     });
   }
 
-  /* Lets the sidenav links work */
-  selectTab(tab: string) {
-    this.instanceTab.select(tab);
-  }
+
 
 }

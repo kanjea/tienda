@@ -26,7 +26,6 @@
 #body-content,
 header,
 main,
-#p-tabs,
 footer {
     padding-left: 300px;
 }
@@ -80,7 +79,7 @@ footer {
     height: 0;
 }
 
-.tabs .tab a {
+#negocios .tabs .tab a {
     color: rgba(238, 110, 115, 0.3);
 }
 

@@ -10,13 +10,19 @@ declare var M: any;
 })
 export class HeaderComponent implements OnInit {
 
+  instanceTab;
 
   constructor() { }
 
   ngOnInit() {
+    this.instanceTab = M.Tabs.getInstance(document.querySelector('#p-tabsmain'));
     const instanceSidenav = new M.Sidenav(document.querySelector('.sidenav'));
   }
 
+  /* Lets the sidenav links work */
+  selectTab(tab: string) {
+    this.instanceTab.select(tab);
+  }
 
 
 }

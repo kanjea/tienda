@@ -140,3 +140,7 @@ nav .brand-logo {
     color: #444;
     margin-top: 4px;
 }
+
+.carousel {
+    height: 100vh;
+}

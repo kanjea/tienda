@@ -17,7 +17,7 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.instanceTab = new M.Tabs(document.querySelector('#p-tabsmain'));
+    this.instanceTab = new M.Tabs(document.querySelector('#p-tabsmain'), { swipeable: false });
     const instanceButton = new M.FloatingActionButton(document.querySelector('.fixed-action-btn'), {
       hoverEnabled: false
     });

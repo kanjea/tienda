@@ -19,7 +19,7 @@
     }
   }, {
     "name": "assets",
-    "installMode": "lazy",
+    "installMode": "prefetch",  /* La solución a la actualización está por acá */
     "updateMode": "prefetch",
     "resources": {
       "files": [

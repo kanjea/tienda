@@ -1,0 +1,28 @@
+/*Allows the collapsible to be a little wider*/
+.full-width {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+/*restore the normal properties of fab buttons*/
+.pi-btn{
+  text-align: center;
+  color: #000;
+}
+.pi-btn i{
+  margin-right: 0 !important;
+  color: white;
+}
+
+.pi-history h2{
+  display: contents;
+  margin:0;
+  font-size: 1.3rem;
+}
+
+#negocios{
+  margin-bottom: 70px;
+}
+
+.card-panel{
+  border-shadow: none !important;
+}

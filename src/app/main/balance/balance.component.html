@@ -1,0 +1,95 @@
+<div id="puntos" class=" col s12 p-widecontainer">
+
+
+  <div class="card-panel ">
+    <span class="title-card">Tienes</span>
+    <div class="big-text center-align">18000
+      <span class="little-text">Puntos</span>
+    </div>
+    <div class="center-align">De 74000
+      <i class="tiny material-icons">history</i>
+    </div>
+  </div>
+
+  <div class="card-panel ">
+    <span class="title-card">Historial de puntos</span>
+    <google-chart [data]="chartData"></google-chart>
+  </div>
+
+  <div class="card-panel ">
+    <span class="title-card" id="resumen">Resumen de puntos</span>
+
+    <ul class="collapsible z-depth-0 p-noborder full-width">
+      <li>
+        <div class="pi-history collapsible-header row">
+
+          <div class="col s2">
+            <img src="assets/img/negocios/restaurante1.jpg" width="50" alt="" class="circle">
+          </div>
+
+          <div class="col s5">
+
+            <h2 class="title">Casa y Comida</h2>
+            Recibiste el 3%
+          </div>
+          <div class="col s5 right-align">
+            Tus puntos:<br>
+            +700 = 18000
+          </div>
+        </div>
+
+        <div class="collapsible-body">
+          <p>Hiciste una compra por $23300, por ser la primera vez, aplica un cashback de 3%. Vuelve hoy y recibe el 5%</p>
+          <p><a href="">Escribe una reseña de tu experiencia</a> y recibe a cambio un 2% adicional = $466</p>
+        </div>
+      </li>
+
+
+      <li>
+        <div class="pi-history collapsible-header row">
+
+          <div class="col s2">
+            <img src="assets/img/negocios/restaurante2.jpg" width="50" alt="" class="circle">
+          </div>
+
+          <div class="col s5">
+
+            <h2 class="title">El Retiro</h2>
+            Recibiste el 2%
+          </div>
+          <div class="col s5 right-align">
+            Tus puntos:<br>
+            +5000 = 10500
+          </div>
+
+
+        </div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="pi-history collapsible-header row">
+
+          <div class="col s2 center-align">
+            <img src="assets/img/negocios/restaurante3.jpg" width="50" alt="" class="circle">
+          </div>
+
+          <div class="col s5">
+
+            <h2 class="title">Recanto do Paraíso</h2>
+            Recibiste el 4%
+          </div>
+          <div class="col s5 right-align">
+            Tus puntos:<br>
+            +4000 = 10300
+          </div>
+
+
+        </div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+    </ul>
+
+
+  </div>
+
+</div>

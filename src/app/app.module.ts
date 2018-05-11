@@ -38,6 +38,7 @@ import { LandingComponent } from './landing/landing.component';
     BrowserModule,
     AppRoutingModule,
     environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : [],
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     /* ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }) */
   ],
   providers: [],

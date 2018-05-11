@@ -144,3 +144,13 @@ nav .brand-logo {
 .carousel {
     height: 100vh;
 }
+
+p-nohmargin{
+  margin-left: 0;
+  margin-right:0;
+}
+.p-noborder{
+  border: none;
+}
+
+
